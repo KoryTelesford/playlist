@@ -1,11 +1,16 @@
 /* global $ */
 
 // BELOW Update the songs array with four of your favorites songs.
-var songs = [];
+var songs = ["Shape Of You", "High Hopes", "Crazy", "What about us"];
 // BELOW Add 4 More arrays to store images_links, artists, song lengths, and links for each song
 // Make sure they match the same order as your array above
-
-
+var images_links = [
+"https://img.sheetmusic.direct/catalogue/product/smd_h_1225024pTKw50Amm2/large.jpg"
+, "https://i.axs.com/2018/05/54798-image_5b06e97b0c1b5.jpg", "https://upload.wikimedia.org/wikipedia/en/thumb/2/24/GnarlsBarkleyCrazyCover.JPG/220px-GnarlsBarkleyCrazyCover.JPG", 
+"https://i.ytimg.com/vi/wKOEJs602uk/maxresdefault.jpg"];
+var artists = ["Ed", "Panic! at the Disco", "Gnarls", "P!nk"];
+var song_lengths = ["3:53", "", "", ""];
+var links = ["", "", "", ""];
 
 function displaySongInfo(){
     // BELOW Use forEach Loop to display the data from each of your arrays in the correct div
