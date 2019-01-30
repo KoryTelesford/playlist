@@ -20,21 +20,61 @@ function displaySongInfo(){
 function emptySongInfo(){
     $("#songs").empty();
     // Use jQuery to empty all of the remaining divs
-
+    
 
 }
 
 
 function addSongInfo(){
     // BELOW write the code to add new items to each of the arrays.
+    var SongName = $(".Song Name").val();
+    var ArtistName = $(".Artist Name").val();
+    var SongLength = $(".Song Length").val();
+    var ImageURL = $(".Image URL").val();
+    var SongLinkAddress = $(".Song Link Address").val();
+    
+    
+    // 3
+    songs.push(SongName);
+    artists.push(ArtistName);
+    song_lengths.push(SongLength);
+    images_links.push(ImageURL);
+    links.push(SongLinkAddress);
+    
+    // 4
+    $(".song").empty();
+    $(".artist").empty();
+    $(".length").empty();
+    $(".image").empty();
+    $(".link").empty();
+     
+    // 5
+    songs.forEach(function(song) {
+        $(".song").append(song);
+    });
+    
+    artists.forEach(function(artist) {
+        $(".artist").append(artist);
+    });
 
-
+    song_lengths.forEach(function(song_length) {
+        $(".length").append(song_length);
+    });
+    
+    images_links.forEach(function(img_link) {
+        $(".image").append(img_link);
+    });
+    
+    links.forEach(function(address) {
+        $(".link").append(address);
+    }); 
 }
 
 $("#add").click(function() {
     emptySongInfo();
     addSongInfo();
     displaySongInfo();
+   
 });
 
-displaySongInfo();
+//displaySongInfo();
