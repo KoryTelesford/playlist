@@ -1,6 +1,8 @@
 h1 {
     text-align: center;
+    font-family: 'Oswald', sans-serif;
 }
+
 
 #cart {
     display: flex;
@@ -26,12 +28,14 @@ h1 {
     height: 100px;
     font-weight: bold;
     margin: 20px;
+    font-family: 'Oswald', sans-serif;
 }
 
 #artists p {
     font-size: 18px;
     height: 100px;
     margin: 20px;
+    font-family: 'Oswald', sans-serif;
 }
 
 #lengths p {
@@ -39,6 +43,7 @@ h1 {
     height: 100px;
     margin: 20px;
     text-align: right;
+    font-family: 'Oswald', sans-serif;
 }
 
 #links a {
@@ -47,6 +52,7 @@ h1 {
     height: 100px;
     font-weight: bold;
     margin: 20px;
+    font-family: 'Oswald', sans-serif;
 }
 
 #form {
@@ -63,4 +69,152 @@ input {
 button {
     font-size: 14px;
     padding: 5px 10px;
+}
+
+#Logo { 
+     position: absolute;
+     top: 100px;
+    
+}
+
+.Icon {
+    width: 45px;    
+    
+}
+
+/* =================================================Inputs--[Ripped from my Portfolitio]=================== */
+.group 			  { 
+  position:relative	; 
+  margin-bottom:45px; 
+  
+}
+input 				{
+  font-size:18px;
+  padding:9px 9px 9px 4px;
+  display:block;
+  width:230px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label{
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:121px;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+
+/* Buttons = [Ripped from my portfolio]  */
+
+.buttons {
+    margin: 10%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }

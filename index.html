@@ -6,35 +6,101 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!-- Your CSS -->
         <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Felipa" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     </head>
 
     <body>
+        
         <h1>My Playlist</h1>
         <div id="form">
             <p>Add a new song:</p>
-            <input placeholder="Song Name" id="song">
+            <!--<input placeholder="Song Name" id="song">
             <input placeholder="Artist Name" id="artist">
             <input placeholder="Song Length" id="length">
             <input placeholder="Image URL" id="image">
-            <input placeholder="Song Link Address" id="link">
-            <button id="add">Add</button>
+            <input placeholder="Song Link Address" id="link">-->
+            
+            <!-- Inputs -->
+            
+            <div class="group">      
+            <input type="text" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Song Name</label>
+            </div>
+      
+            <div class="group">      
+            <input type="text" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Artist Name</label>
+            </div>
+            
+            <div class="group">      
+            <input type="text" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Song Length</label>
+            </div>
+      
+            <div class="group">      
+            <input type="text" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Image URL</label>
+            </div>
+            
+             <div class="group">      
+            <input type="text" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Song Link Address</label>
+            </div>
+            
+            <button class="btn-hover color-1" id="add">Add</button>
+            
+            <img id ="Logo" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201511/youtube-music_647_111315102019.jpg">
+            
         </div>
-        <div id="cart">
-            <div class="column" id="images">
-                <ul class="Image URL"> <li>  </li> </ul>
+        <div id="songs">
+            <!--<div class="column" id="images">
+                <ul class="ImageURL"> <li>  </li> </ul>
             </div>
             <div class="column" id="songs">
-                <ul class="Song Name"> <li>  </li> </ul>
+                <ul class="SongName"> <li>  </li> </ul>
             
             </div>
             <div class="column" id="artists">
-                <ul class="Artist Name"> <li>  </li> </ul>
+                <ul class="ArtistName"> <li>  </li> </ul>
             </div>
             <div class="column" id="lengths">
                 <ul class="Song Length"> <li>  </li> </ul>
             </div>
             <div class="column" id="links">
                 <ul class="Song Link Address"> <li>  </li> </ul>
+                 <ul id="playlist">-->
+        
+            <li class="active">
+            <img class="Icon" src="https://img.sheetmusic.direct/catalogue/product/smd_h_1227849dW53Jee02K/large.jpg">
+            <a href="https://www.youtube.com/watch?v=JGwWNGJdvx8">
+                Shape Of You
+            </a>
+        </li>
+        <li>
+            <img class ="Icon"src="https://upload.wikimedia.org/wikipedia/en/thumb/2/24/GnarlsBarkleyCrazyCover.JPG/220px-GnarlsBarkleyCrazyCover.JPG">
+            <a href="https://www.youtube.com/watch?v=gOpu2GIkPzU">
+                Crazy
+            </a>
+        </li>
+        <li>
+            <img class="Icon" src="https://slm-assets2.secondlife.com/assets/19185927/view_large/what_about_us.jpg?1512793308">
+            <a href="https://www.youtube.com/watch?v=wKOEJs602uk">
+                What about us
+            </a>
+        </li>
+        <li>        
+        
             </div>
         </div>
         <!-- jQuery -->
